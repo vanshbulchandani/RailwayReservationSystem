@@ -1,0 +1,159 @@
+/* General Layout */
+.app-container {
+  min-height: 100vh;
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.content-wrapper {
+  max-width: 800px;
+  width: 100%;
+  padding: 1rem;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+}
+
+/* Titles */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
+/* Sections */
+.section {
+  background-color: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Train List */
+.train-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.train-card {
+  padding: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, border 0.3s;
+}
+
+.train-card:hover {
+  border-color: #3b82f6;
+}
+
+.train-card.selected {
+  border-color: #2563eb;
+  background-color: #eff6ff;
+}
+
+.train-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.train-info {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Buttons */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.book-btn,
+.cancel-btn,
+.status-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  transition: background-color 0.3s;
+}
+
+.book-btn {
+  background-color: #059669;
+  color: white;
+}
+
+.book-btn:hover {
+  background-color: #047857;
+}
+
+.cancel-btn {
+  background-color: #dc2626;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #b91c1c;
+}
+
+.status-btn {
+  background-color: #2563eb;
+  color: white;
+}
+
+.status-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* Input Field */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.input-field {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.message-box {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  font-size: 16px;
+}
